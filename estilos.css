@@ -1,0 +1,276 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #fefae0;
+    width: 100%;
+}
+/*menu*/
+.imglogo{
+    height: 80px;
+    width: 120px;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 21px;
+    font-family: sans-serif;
+    color: black;
+    padding-top: 24px;
+}
+a:hover{
+    border-top: 6px solid #9ACD32;
+    color: #9ACD32;
+}
+header nav{
+    width: 70%;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white ;
+    box-shadow: 0px 0px 15px 0px rgb(0, 0, 0.3);
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*banner*/
+.banner-principal{
+    width: 100%;
+    height: 450px;
+    background-image: url(./img/1.jpg) ;
+    background-position: right center;
+    background-size: 100% 160%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-principal h2{
+    font-size: 50px;
+    font-family:serif;
+    color: #2a2f30;
+}
+
+/*contenido*/
+.main-text{
+    padding: 45px 10px 5px 10px;
+    background-color: #e9edc9;
+    box-shadow: 0px 0px 15px 0px rgb(0, 0, 0.3);
+}
+.main-text h2{
+    font-size: 30px;
+    margin-bottom: 22px;
+    text-align: center;
+
+}
+.main-text p{
+    font-size: 21px;
+    margin-bottom: 22px;
+    font-family: serif;
+    padding-left: 90px;
+    padding-right: 90px;
+    text-align: justify;
+}
+.imgsection{
+    height: 250px;
+    width: 350px;
+}
+div .imgsection{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.section-text{
+    margin: 45px 50px;
+    display: flex;
+    justify-content: space-around;
+    background-image: radial-gradient(#a5a58d, #fefae0); 
+}
+.section-text article{
+  width: 40%;
+
+}
+.section-text article h3{
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 7px;
+}
+.section-text article p{
+    font-size: 19px;
+    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/*footer*/
+footer{
+    bottom: 0px;
+    font-size: 17px;
+    color: whitesmoke;
+    background-color: #354f52;
+    width: 100%;
+}
+
+.imgredes{
+    height: 30px;
+    width: 30px;
+}
+footer p{
+    text-align: center;
+}
+.footer-redes{
+    text-align: center;
+}
+
+/*pag productos*/
+/*galeria de productos*/
+
+.galeria-contenedor{
+    display: flex;
+    background-color: white;
+
+}
+
+.img-galeria{
+   
+    width: 40%;
+}
+.section-galeria{
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+.section-galeria h2{
+    margin-bottom: 15px;
+    font-size: 50px;
+    text-align: center;
+    font-family: sans-serif;
+}
+.section-galeria p{
+    font-size: 26px;
+    font-family:monospace;
+    padding-left: 20px;
+    padding-right: 100px;
+}
+.img-galeria{
+    animation-name: animacion1;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+.img-galeria:hover{
+   width: 45%;
+}
+
+/*pag Historia*/
+/*Quienes Somos*/
+
+.section1{
+    margin: 50px 200px 10px 200px;
+    text-align: center;
+}
+
+.section1 h2{
+    margin-bottom: 5px;
+    font-size: 45px;
+    font-family: sans-serif; 
+    color: #6b705c; 
+    animation: section 3s infinite; 
+}
+.section1 p{
+    font-size: 19px;
+    font-family: fantasy;
+    text-align: justify;
+    color: #495057
+}
+
+.section2{
+    margin: 50px 200px 10px 200px; 
+    text-align: center;  
+}
+.section2 h2{
+    margin-bottom: 5px;
+    font-size: 45px;
+    font-family: sans-serif;
+    color: #6b705c;
+    animation: section 3s infinite; 
+}
+.section2 p{
+    font-size: 19px;
+    font-family: fantasy;
+    text-align: justify;
+    color: #495057;   
+}
+
+@keyframes section {
+    50%{
+        color: #ddbea9;
+    }    
+}
+
+/*pag hidroponia*/
+
+.main-hidroponia{
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.main-hidroponia h1{
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+.main-hidroponia p{
+    font-size: 20px;
+    margin-bottom: 80px;
+}
+.main-hidroponia img{
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+.main-hidroponia img:hover{
+    height: 550px;
+    width: 1000px;
+}
+
+
+
+/*pag comentarios*/
+
+.imgcontacto img{
+    height: 350px;
+    width: 450px;
+}
+
+.comentariocon{
+    display: grid;
+    grid-template-areas: "comentariocon comentariocon"
+                         " texto texto"
+                         " imgcomentario comentarios";
+    grid-template-columns: 50% 50%; 
+    grid-template-rows: 100px 300px;               
+}
+.comentariocon{
+    grid-area: comentariocon;
+}
+.textocomentario{
+    grid-area: texto;
+}
+.imgcontacto{
+    grid-area: imgcomentario;
+}
+.comentarios{
+    grid-area: comentarios;
+}
+
